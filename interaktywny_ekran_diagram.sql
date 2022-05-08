@@ -1,8 +1,9 @@
 CREATE TABLE `sala` (
   `id` int PRIMARY KEY,
-  `numer_sali` int,
+  `numer_sali` varchar(255),
   `pietro` int,
-  `uzytkownik_id` int
+  `uzytkownik_id` int,
+  `budynek` varchar(255),
 );
 
 CREATE TABLE `uzytkownik` (
@@ -11,7 +12,8 @@ CREATE TABLE `uzytkownik` (
   `nazwisko` varchar(255),
   `stopien_naukowy` varchar(255),
   `adres_email` varchar(255),
-  `godz_konsultacji` varchar(255)
+  `godz_konsultacji` varchar(255),
+  `numer_telefonu` varchar(255)
 );
 
 CREATE TABLE `wizytowka` (
