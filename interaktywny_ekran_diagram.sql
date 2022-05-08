@@ -3,7 +3,7 @@ CREATE TABLE `sala` (
   `numer_sali` varchar(255),
   `pietro` int,
   `uzytkownik_id` int,
-  `budynek` varchar(255),
+  `budynek` varchar(255)
 );
 
 CREATE TABLE `uzytkownik` (
