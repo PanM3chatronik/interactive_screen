@@ -31,7 +31,6 @@ CREATE TABLE `urzadzenie` (
   `ilosc_wizytowek` int
 );
 
-'ALTER TABLE `uzytkownik` ADD FOREIGN KEY (`id`) REFERENCES `sala` (`uzytkownik_id`);'
 ALTER TABLE `sala` ADD FOREIGN KEY (`uzytkownik_id`) REFERENCES `uzytkownik` (`id`);
 
 ALTER TABLE `wizytowka` ADD FOREIGN KEY (`uzytkownik_id`) REFERENCES `uzytkownik` (`id`);
