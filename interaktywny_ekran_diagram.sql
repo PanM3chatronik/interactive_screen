@@ -1,5 +1,5 @@
 CREATE TABLE `sala` (
-  `id` int PRIMARY KEY,
+  `id` int AUTO_INCREMENT PRIMARY KEY,
   `numer_sali` varchar(255),
   `pietro` int,
   `uzytkownik_id` int,
@@ -7,7 +7,7 @@ CREATE TABLE `sala` (
 );
 
 CREATE TABLE `uzytkownik` (
-  `id` int PRIMARY KEY,
+  `id` int AUTO_INCREMENT PRIMARY KEY,
   `imie` varchar(255),
   `nazwisko` varchar(255),
   `stopien_naukowy` varchar(255),
@@ -17,12 +17,12 @@ CREATE TABLE `uzytkownik` (
 );
 
 CREATE TABLE `wizytowka` (
-  `id` int PRIMARY KEY,
+  `id` int AUTO_INCREMENT PRIMARY KEY,
   `uzytkownik_id` int
 );
 
 CREATE TABLE `urzadzenie` (
-  `id` int,
+  `id` int AUTO_INCREMENT PRIMARY KEY,
   `pobor_pradu` int,
   `pojemnosc_bat` int,
   `sala_id` int,
